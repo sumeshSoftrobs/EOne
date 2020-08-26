@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group>
+            <item android:id="@+id/myProfile"
+
+                android:title="My Profile" />
+            <item android:id="@+id/calenders"
+
+                android:title="Calenders" />
+            <item android:id="@+id/helpDesk"
+
+                android:title="Help Desk" />
+            <item android:id="@+id/signOut"
+
+                android:title="SignOut" />
+            <item android:id="@+id/feedback"
+
+                android:title="FeedBack" />
+        </group>
+    <!--
+        <item android:title="Title 1">
+            <menu>
+                <item android:id="@+id/nav_item_six"
+
+                    android:title="Item 6" />
+                <item android:id="@+id/nav_item_seven"
+
+                    android:title="Item 7" />
+            </menu>
+        </item>
+        -->
+
+</menu>

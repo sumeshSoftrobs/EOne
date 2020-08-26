@@ -17,6 +17,7 @@ import com.example.eone.R;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel mViewModel;
+    String APIKey = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
 
     public static HomeFragment newInstance() {
         return new HomeFragment();
