@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/notice"
+        android:title="Notices"
+        android:icon="@drawable/notice_note"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/studyMaterials"
+        android:title="Materials"
+        android:icon="@drawable/study_materials"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/toDoList"
+        android:title="Productivity"
+        android:icon="@drawable/to_do_local"
+        app:showAsAction="always"
+        />
+</menu>
