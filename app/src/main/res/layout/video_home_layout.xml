@@ -23,7 +23,7 @@
             android:src="@drawable/u"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="22dp"
         android:layout_margin="10dp"
         android:textSize="18dp"
         android:id="@+id/videoTitle"
