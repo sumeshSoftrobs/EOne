@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
     String iD,title,desc,imgUrl;
     List<JSONResponse> allVideos;
     String APIKey = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
-    String U_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCIwFjwMjI0y7PDBVEO9-bkQ&key=AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
+    String U_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCtJQuzHsyq7--_gx4pYR4Xg&maxResults=100&key=AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
     HomeVideoListAdapter adapter;
     public static HomeFragment newInstance() {
         return new HomeFragment();
