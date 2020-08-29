@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eone.R;
@@ -18,12 +19,20 @@ public class VideoPlayerActivity extends YouTubeBaseActivity implements YouTubeP
     public static final String YOUTUBE_API_KEY = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
     private static final int RECOVERY_REQUEST = 1;
     String videoId = null;
+    private TextView titleTxt,descTxt;
+    String title , desc;
 
     private YouTubePlayerView youTubeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_player);
+        titleTxt = (TextView)findViewById(R.id.titleTxt);
+        descTxt = (TextView) findViewById(R.id.descTxt);
+        title = getIntent().getStringExtra("title");
+        desc = getIntent().getStringExtra("desc");
+        titleTxt.setText(title);
+        descTxt.setText(desc);
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(YOUTUBE_API_KEY, this);
         videoId = getIntent().getStringExtra("id");
