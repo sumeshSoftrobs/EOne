@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainLayouts.Todo.addTodo.AddTodoActivity">
+    tools:context=".mainLayouts.Todo.updateTodo.UpdateTodoActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add a Task"
+                android:text="Update Task"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
             <EditText
@@ -101,5 +101,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/check" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,699 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mainLayouts.notice.NoticesFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+                        android:id="@+id/titleRecycler"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+                        android:id="@+id/descRecycler"
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+                            android:id="@+id/dateRecycler"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+                            android:id="@+id/timeRecycler"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
 
-</FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+                            android:id="@+id/priorityRecycler"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Academics Notices"
+
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My First Todo Task"
+
+                        android:padding="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#14CA97"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My First Todo Task"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="#E84816"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority :"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIGH"
+
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

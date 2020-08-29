@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My First Todo Task"
+            android:id="@+id/titleRecycler"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My First Todo Task"
+            android:id="@+id/descRecycler"
+            android:padding="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My First Todo Task"
+                android:id="@+id/dateRecycler"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:background="#14CA97"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My First Todo Task"
+                android:id="@+id/timeRecycler"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:background="#E84816"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority :"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGH"
+            android:id="@+id/priorityRecycler"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
