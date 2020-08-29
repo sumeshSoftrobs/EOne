@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainLayouts.Todo.addTodo.AddTodoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add a ToDo"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="todo title..."
+                android:padding="10dp"
+                android:id="@+id/todoTitle"
+                android:background="@drawable/edit_text_layout"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="description..."
+                android:padding="10dp"
+                android:id="@+id/todoDesc"
+                android:background="@drawable/edit_text_layout"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="date 23/08/2020..."
+                android:padding="10dp"
+                android:id="@+id/todoDate"
+                android:background="@drawable/edit_text_layout"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="time 10AM-3PM..."
+                android:padding="10dp"
+                android:id="@+id/todoTime"
+                android:background="@drawable/edit_text_layout"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Priority"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <RadioButton
+                    android:id="@+id/radioBtnLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Low"/>
+                <RadioButton
+                    android:id="@+id/radioBtnMdm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"/>
+                <RadioButton
+                    android:id="@+id/radioBtnHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/check" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
