@@ -16,7 +16,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 import java.security.Provider;
 
 public class VideoPlayerActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
-    public static final String YOUTUBE_API_KEY = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
+    public static final String YOUTUBE_API_KEY = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";//Youtube API Key
     private static final int RECOVERY_REQUEST = 1;
     String videoId = null;
     private TextView titleTxt,descTxt;

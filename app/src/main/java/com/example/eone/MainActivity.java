@@ -23,6 +23,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eone.mainLayouts.Todo.ToDoFragment;
+import com.example.eone.mainLayouts.askQuestion.AskQuestionActivity;
+import com.example.eone.mainLayouts.calender.CalenderActivity;
 import com.example.eone.mainLayouts.home.HomeFragment;
 import com.example.eone.mainLayouts.materials.StudyMaterialsFragment;
 import com.example.eone.mainLayouts.notice.NoticesFragment;
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        toolbar.setTitle("E Store");
+        toolbar.setTitle("EOne");
         setSupportActionBar(toolbar);
         navigationView = (NavigationView) findViewById(R.id.navigationView);
         drawer = findViewById(R.id.drawer_layout);
@@ -107,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 // getActionBar().setTitle(mDrawerTitle);
             }
         };
-
+        toggle.setDrawerIndicatorEnabled(true);
 
        fm.beginTransaction().
 
@@ -198,18 +200,27 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.helpDesk:
-                        Toast.makeText(getApplicationContext(),"HelpLine Number",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"+91-9876543210",Toast.LENGTH_LONG).show();
                       //  overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         break;
+                    case R.id.askQuestion:
+                        Intent a = new Intent(getApplicationContext(), AskQuestionActivity.class);
+                        startActivity(a);
+
+                        //  overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                        break;
                     case R.id.myProfile:
-                         Toast.makeText(getApplicationContext(),"profile",Toast.LENGTH_LONG).show();
+                         Intent i = new Intent(getApplicationContext(),MyProfileActivity.class);
+                         startActivity(i);
                        // overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                         break;
                     case R.id.calenders:
-
+                        Intent c = new Intent(getApplicationContext(), CalenderActivity.class);
+                        startActivity(c);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         break;
                     case R.id.signOut:
+                        Toast.makeText(getApplicationContext(),"Signed Out",Toast.LENGTH_LONG).show();
                        /* boolean isFilePresent = isFilePresent(getApplicationContext(), "AccessTocken.txt");
                         if (isFilePresent) {
                             delete(getApplicationContext(),"AccessTocken.txt");

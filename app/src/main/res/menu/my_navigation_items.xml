@@ -3,19 +3,21 @@
 
         <group>
             <item android:id="@+id/myProfile"
-
+                android:icon="@drawable/person"
                 android:title="My Profile" />
             <item android:id="@+id/calenders"
-
+                android:icon="@drawable/calender"
                 android:title="Calenders" />
+            <item android:id="@+id/askQuestion"
+                android:icon="@drawable/ask_question"
+                android:title="Ask Question" />
             <item android:id="@+id/helpDesk"
-
+                android:icon="@drawable/phone"
                 android:title="Help Desk" />
             <item android:id="@+id/signOut"
-
+                android:icon="@drawable/sign_out"
                 android:title="SignOut" />
             <item android:id="@+id/feedback"
-
                 android:title="FeedBack" />
         </group>
     <!--

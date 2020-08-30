@@ -11,11 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mainLayouts.Todo.updateTodo.UpdateTodoActivity"></activity>
+        <activity android:name=".mainLayouts.askQuestion.AskQuestionActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".mainLayouts.calender.CalenderActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MyProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".mainLayouts.Todo.updateTodo.UpdateTodoActivity" />
         <activity android:name=".mainLayouts.Todo.addTodo.AddTodoActivity" />
         <activity android:name=".VideoPlayer.VideoPlayerActivity" />
         <activity
-            android:name=".MainActivity">
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

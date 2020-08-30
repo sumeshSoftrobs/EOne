@@ -46,8 +46,9 @@ public class HomeFragment extends Fragment {
     private RecyclerView recyclerView;
     String iD,title,desc,imgUrl;
     List<JSONResponse> allVideos;
-    String APIKey = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
-    String U_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCtJQuzHsyq7--_gx4pYR4Xg&maxResults=100&key=AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";
+    String channelID = "UCtJQuzHsyq7--_gx4pYR4Xg";
+    String APIKey = "AIzaSyDZSyRA_M4NtoBytqQN-CYsUe_aYjSJTCw";//API KEY YOUTUBE API DATA//Google API's
+    String U_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId="+channelID+"&maxResults=100&key="+APIKey;
     HomeVideoListAdapter adapter;
     public static HomeFragment newInstance() {
         return new HomeFragment();
