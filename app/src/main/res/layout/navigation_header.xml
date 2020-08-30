@@ -17,6 +17,7 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:id="@+id/userImage"
+            android:src="@drawable/person"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,9 +43,10 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
+            android:src="@drawable/ic_baseline_person_24"
             android:id="@+id/profilePic"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            app:tint="#7A7A7A" />
     </androidx.cardview.widget.CardView>
 
 
